@@ -26,6 +26,25 @@
   </head>
 
   <body>
+    <!-- Preloader -->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader-content">
+        <img
+          src="assets/images/Hexora White Logo.png"
+          alt="Logo"
+          class="loader-logo"
+        />
+        <div class="loading-bar-container">
+          <div class="loading-bar"></div>
+        </div>
+      </div>
+      <div class="panel left"></div>
+      <div class="panel right"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+
     <!-- Header Section -->
     <div class="navbar">
       <div class="navbar-logo">
@@ -38,7 +57,7 @@
           <li><a href="#about">Discover</a></li>
           <li><a href="#services">Explore</a></li>
           <li><a href="#portfolio">Gallery</a></li>
-          <li><a href="#testamonials">Voices</a></li>
+          <li><a href="#testemonial">Voices</a></li>
         </ul>
       </nav>
 
@@ -66,7 +85,7 @@
         <li><a href="#about">Discover</a></li>
         <li><a href="#services">Explore</a></li>
         <li><a href="#portfolio">Gallery</a></li>
-        <li><a href="#testamonials">Voices</a></li>
+        <li><a href="#testemonial">Voices</a></li>
       </ul>
 
       <div class="contact-button">
@@ -110,7 +129,7 @@
     </div>
 
     <!-- About Section -->
-    <div class="agency-section" id="about">
+    <div class="agency-section reveal" id="about">
       <div class="agency-container">
         <div class="agency-content-wrapper">
           <div class="image-area">
@@ -147,11 +166,21 @@
     </div>
 
     <!-- Features Section-->
-    <div class="features-container" id="features">
+    <div class="features-container reveal" id="features">
       <div class="features-left">
         <h2>Need reasons to pick us?</h2>
         <div class="line"></div>
         <p>We build fast, charge fair, and stay real.</p>
+        <div class="feature-container">
+          <div class="box-card rotating">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+        </div>
       </div>
 
       <div class="features-grid">
@@ -214,7 +243,7 @@
     </div>
 
     <!-- Services Section-->
-    <div class="Services" id="services">
+    <div class="Services reveal" id="services">
       <h2>Wanna Make Something Cool?</h2>
       <p>
         From websites to viral vibes — we’ve got your back, front, and view.
@@ -278,7 +307,7 @@
     </div>
 
     <!-- Partners Section-->
-    <div class="partners" id="partners">
+    <div class="partners reveal" id="partners">
       <h2>Who’s vibin’ with us?</h2>
       <p>
         From tech legends to startup homies — we squad up with the best to bring
@@ -331,9 +360,10 @@
     </div>
 
     <!-- Portfolio Section-->
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio reveal" id="portfolio">
       <div class="portfolio-grid">
         <div class="card intro">
+          <p class="subtitle">PORTFOLIO</p>
           <h2>Wanna See the Magic We’ve Built?</h2>
           <div class="line"></div>
           <p>Real ones. Real reviews. Real results.</p>
@@ -352,7 +382,7 @@
     </div>
 
     <!-- Testemonial Section-->
-    <div class="testimonial" id="testemonial">
+    <div class="testimonial reveal" id="testemonial">
       <div class="testimonial-section">
         <div class="testimonial-header">
           <p class="subtitle">TESTIMONIAL</p>
@@ -396,8 +426,8 @@
       </div>
     </div>
 
-    <!-- Contact Section -->>
-    <div class="contact-section" id="contact">
+    <!-- Contact Section -->
+    <div class="contact-section reveal" id="contact">
       <div class="contact-container">
         <div class="contact-info">
           <h4>GET IN TOUCH</h4>
@@ -448,7 +478,7 @@
     </div>
 
     <!--Footer Section-->
-    <footer class="footer">
+    <footer class="footer reveal">
       <div class="footer-container">
         <div class="footer-about">
           <img
@@ -465,6 +495,7 @@
             <i class="fab fa-instagram"></i>
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
           </div>
         </div>
 
@@ -475,6 +506,7 @@
             <li><a href="#about">Discover</a></li>
             <li><a href="#services">Explore</a></li>
             <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#testemonial">Voices</a></li>
           </ul>
         </div>
 
