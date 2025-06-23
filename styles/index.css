@@ -23,6 +23,26 @@ body {
   --Quinary-color: #f3af36;
 }
 
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--Quaternary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--Quinary-color);
+  border-radius: 10px;
+  border: 2px solid var(--Quaternary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Quinary-color);
+}
+
 /* Loader Styles */
 .loader-content {
   display: flex;
@@ -702,6 +722,7 @@ body {
   padding: 30px 20px;
   border-radius: 50px 10px 50px 10px;
   position: relative;
+  height: 250px;
   text-align: left;
 }
 
@@ -766,6 +787,30 @@ body {
 .feature-card a i {
   margin-left: 6px;
 }
+
+.card-content {
+  transition: opacity 0.3s ease;
+}
+
+.card-content.expanded h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card-content.expanded p {
+  font-size: 14px;
+  color: var(--tertiary-color);
+  margin-bottom: 10px;
+}
+
+.back-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--Quinary-color);
+  text-decoration: none;
+}
+
 
 /* Service Section */
 .Services {
