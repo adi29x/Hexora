@@ -718,39 +718,55 @@ body {
 }
 
 .feature-card {
+  perspective: 1000px;
   background-color: var(--Quaternary-color);
   padding: 30px 20px;
   border-radius: 50px 10px 50px 10px;
   position: relative;
   height: 250px;
   text-align: left;
+  overflow: hidden;
 }
 
-.feature-card::before,
-.feature-card::after {
-  content: "";
+.flip-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+
+/* Trigger flip on .flipped class */
+.flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  backface-visibility: hidden;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 3px solid var(--Quinary-color);
-}
-
-.feature-card::before {
+  width: 100%;
+  height: 100%;
   top: 0;
-  right: 0;
-  border-bottom: none;
-  border-left: none;
-  border-top-right-radius: 10px;
-}
-
-.feature-card::after {
-  bottom: 0;
   left: 0;
-  border-top: none;
-  border-right: none;
-  border-bottom-left-radius: 10px;
+  padding: 0; /* Retain as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.3s ease;
 }
 
+.card-content.expanded {
+  transform: rotateY(180deg);
+}
+
+/* Visual styling — as provided */
 .icon-box {
   width: 50px;
   height: 50px;
@@ -765,13 +781,15 @@ body {
   margin-bottom: 15px;
 }
 
-.feature-card h3 {
+.feature-card h3,
+.card-content.expanded h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: var(--primary-color);
 }
 
-.feature-card p {
+.feature-card p,
+.card-content.expanded p {
   font-size: 14px;
   color: var(--tertiary-color);
   margin-bottom: 10px;
@@ -786,6 +804,13 @@ body {
 
 .feature-card a i {
   margin-left: 6px;
+}
+
+.back-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--Quinary-color);
+  text-decoration: none;
 }
 
 .card-content {
@@ -1104,7 +1129,7 @@ body {
   justify-content: center;
   align-content: center;
   border-radius: 10px;
-  margin: 0 40px;
+  margin: auto;
 }
 
 .testimonial-section {

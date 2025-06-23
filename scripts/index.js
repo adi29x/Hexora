@@ -124,23 +124,16 @@ typeEffect();
 
 // Feature Section
 document.querySelectorAll(".feature-card").forEach((card) => {
-  const original = card.querySelector(".original");
-  const expanded = card.querySelector(".expanded");
+  const flipper = card.querySelector(".flipper");
 
   card.querySelector(".read-more").addEventListener("click", (e) => {
     e.preventDefault();
-    original.style.display = "none";
-    expanded.style.display = "flex";
-    expanded.style.flexDirection = "column";
-    expanded.style.justifyContent = "space-between";
+    flipper.classList.add("flipped");
   });
 
   card.querySelector(".back-btn").addEventListener("click", (e) => {
     e.preventDefault();
-    expanded.style.display = "none";
-    original.style.display = "flex";
-    original.style.flexDirection = "column";
-    original.style.justifyContent = "space-between";
+    flipper.classList.remove("flipped");
   });
 });
 
