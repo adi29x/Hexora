@@ -137,3 +137,33 @@ document.querySelectorAll(".feature-card").forEach((card) => {
   });
 });
 
+const form = document.getElementById("quote-form");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = {
+    name: form.name.value,
+    company: form.company.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    subject: form.subject.value,
+    message: form.message.value,
+  };
+
+  const response = await fetch(
+    "https://script.google.com/macros/s/AKfycbxTgiLfHxenVif8N2sW4Sf0gPOY1_4ONehqprJ7sraWEy7vC19nQMq-FU23r5OVCzU57Q/exec",
+    {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
+    }
+  );
+
+  if (response.ok) {
+    alert("Thanks! Your message has been sent.");
+    form.reset();
+  } else {
+    alert("Oops! Something went wrong.");
+  }
+});
