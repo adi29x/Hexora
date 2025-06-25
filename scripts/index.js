@@ -137,6 +137,7 @@ document.querySelectorAll(".feature-card").forEach((card) => {
   });
 });
 
+// Contact Form Submission
 const form = document.getElementById("quote-form");
 
 form.addEventListener("submit", async function (e) {

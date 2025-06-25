@@ -107,19 +107,6 @@ body {
   transform: translateX(100%);
 }
 
-/* Scroll Animation */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
-  will-change: opacity, transform;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Loading Bar (above panels) */
 .loading-bar-container {
   position: absolute;
@@ -149,6 +136,19 @@ body {
 .hide-loader {
   opacity: 0;
   pointer-events: none;
+}
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Cursor Styles */
