@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hexora is a digital agency offering expert web development, creative graphic design, and performance-driven digital marketing solutions to elevate your brand."
+    />
+    <meta
+      name="keywords"
+      content="digital agency, web development, digital marketing, graphic design, branding solutions, Hexora, website design, creative agency"
+    />
+    <meta name="author" content="Hexora Digital Solutions" />
+    <link rel="stylesheet" href="styles/web.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Hexora | Web Development Services</title>
+    <link
+      rel="icon"
+      href="assets/images/Hexora White Logo.png"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="loader-wrapper" id="loader">
+      <div class="loader-content">
+        <img
+          src="assets/images/Hexora White Logo.png"
+          alt="Logo"
+          class="loader-logo"
+        />
+        <div class="loading-bar-container">
+          <div class="loading-bar"></div>
+        </div>
+      </div>
+      <div class="panel left"></div>
+      <div class="panel right"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Header Section -->
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/images/Hexora White Logo with Name.png" alt="" />
+      </div>
+
+      <nav class="navbar-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Discover</a></li>
+          <li><a href="#services">Explore</a></li>
+          <li><a href="#portfolio">Gallery</a></li>
+          <li><a href="#testemonial">Voices</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-contact-buttons">
+        <div class="contact-button">
+          <a href="#contact" class="btn-1">
+            <span class="default-text">We’re In</span>
+            <span class="hover-text">Let's Talk</span>
+          </a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Section-->
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" id="close-btn">&times;</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Discover</a></li>
+        <li><a href="#services">Explore</a></li>
+        <li><a href="#portfolio">Gallery</a></li>
+        <li><a href="#testemonial">Voices</a></li>
+      </ul>
+
+      <div class="contact-button">
+        <a href="#contact" class="btn-1">
+          <span class="default-text">We’re In</span>
+          <span class="hover-text">Let's Talk</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+      <div class="hero-content">
+        <p class="header-text">
+          Hexora codes in silence, clean and tight — born in the dark, built to
+          ignite.
+        </p>
+        <h2>
+          <span>Transform</span> Your Online Identity with
+          <span>Hexora</span>
+        </h2>
+        <h1 class="changing-word">
+          Your own place to <span id="changing-word">Design</span>
+        </h1>
+        <p>
+          Why struggle with clunky code and broken sites? Let the pros handle
+          it. From stunning designs to seamless performance — we build it right,
+          without breaking the bank.
+          <span>Welcome to Hexora</span>, Your one-stop web development
+          powerhouse.
+        </p>
+        <div class="hero-sectioFn-buttons">
+          <a href="#services" class="btn-2">
+            <span class="default-text">Select Projects</span>
+            <span class="hover-text">Let's Build</span>
+          </a>
+          <a href="#contact" class="btn-2">
+            <span class="default-text">We’re In</span>
+            <span class="hover-text">Let's Talk</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/Hero image 2.png" alt="Hero Image" />
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="Services reveal" id="services">
+      <h2>Wanna See the Magic We Can Create?</h2>
+      <p>
+        From silent code to pixel glow — we build the web you'll want to show.
+      </p>
+      <p class="subtitle">LANDING PAGES</p>
+
+      <div class="services-grid reveal">
+        <!--Hexora MiniStart-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>Hexora MiniStart<br /><span>₹499</span></h3>
+                <p>
+                  A quick and efficient landing page to kickstart your online
+                  presence with essential features.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>Hexora MiniStart<br /><span>₹499</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Static Landing Page-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>Static Landing Page<br /><span>₹999</span></h3>
+                <p>
+                  A beautifully crafted static landing page to showcase your
+                  brand with speed and simplicity.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>Static Landing Page<br /><span>₹999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--React based Landing Page-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>React-based Landing Page<br /><span>₹1999</span></h3>
+                <p>
+                  A modern, responsive landing page built with React for a
+                  dynamic user experience.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>React-based Landing Page<br /><span>₹1999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Dynamic Landing Page with Backend-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Dynamic Landing Page<br />(Backend Integration)<br /><span
+                    >₹3499</span
+                  >
+                </h3>
+                <p>
+                  A dynamic landing page with backend integration to manage
+                  content and user interactions seamlessly.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Dynamic Landing Page<br />(Backend Integration)<br /><span
+                    >₹3499</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Niche Specific Landing Page-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Niche Specific Landing Page<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <p>
+                  A specialized landing page tailored to your niche, designed to
+                  convert visitors into customers.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Niche Specific Landing Page<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Custom Landing Page-->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Custom Landing Page<br /><span>Varies based on project.</span>
+                </h3>
+                <p>
+                  A fully customized landing page designed to meet your unique
+                  business needs and branding requirements.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Custom Landing Page<br /><span>Varies based on project.</span>
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Services reveal" id="services">
+      <p class="subtitle">WEBSITES</p>
+
+      <div class="services-grid reveal">
+        <!-- Static Websites -->
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>Static Website<br /><span>₹2999</span></h3>
+                <p>
+                  A simple yet elegant static website to establish your online
+                  presence.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>Static Website<br /><span>₹2999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Portfolio Website<br />(Frontend Only)<br /><span>₹2999</span>
+                </h3>
+                <p>
+                  A visually appealing portfolio website to showcase your work
+                  and skills.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Portfolio Website<br />(Frontend Only)<br /><span>₹1999</span>
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Portfolio Website<br />(Backend Integration)<br /><span
+                    >₹3999</span
+                  >
+                </h3>
+                <p>
+                  A comprehensive portfolio website with backend integration for
+                  dynamic content management.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Portfolio Website<br />(Backend Integration)<br /><span
+                    >₹3999</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Dynamic Website<br />(No User Authentication)<br /><span
+                    >₹4499</span
+                  >
+                </h3>
+                <p>
+                  A dynamic website with interactive features, perfect for
+                  businesses looking to engage users without complex
+                  authentication.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Dynamic Website<br />(No User Authentication)<br /><span
+                    >₹4499</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Dynamic Website<br />(User Authentication)<br /><span
+                    >₹9999</span
+                  >
+                </h3>
+                <p>
+                  A dynamic website with user authentication, allowing secure
+                  access to personalized content and features.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Dynamic Website<br />(User Authentication)<br /><span
+                    >₹9999</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Dynamic Website<br />(Admin Dashboard)<br /><span
+                    >₹14999</span
+                  >
+                </h3>
+                <p>
+                  A fully functional dynamic website with an admin dashboard for
+                  managing content, users, and site settings.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Dynamic Website<br />(Admin Dashboard)<br /><span
+                    >₹14999</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Custom Web Applications<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <p>
+                  Tailored web applications designed to meet specific business
+                  needs, from e-commerce to complex data management systems.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Custom Web Applications<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Services reveal" id="services">
+      <p class="subtitle">ECOMMERCE STORES</p>
+
+      <div class="services-grid reveal">
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>Shopify Store Setup<br /><span>₹4999</span></h3>
+                <p>
+                  A complete Shopify store setup with essential features to get
+                  your online business started.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>Shopify Store Setup<br /><span>₹4999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>WooCommerce Store Setup<br /><span>₹4999</span></h3>
+                <p>
+                  A complete WooCommerce store setup with essential features to
+                  kickstart your online sales.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>WooCommerce Store Setup<br /><span>₹4999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>WordPress Store Setup<br /><span>₹4999</span></h3>
+                <p>
+                  A complete WordPress store setup with essential features to
+                  launch your online store quickly.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>WordPress Store Setup<br /><span>₹4999</span></h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <div class="flip-container">
+            <div class="flipper">
+              <div class="card-front">
+                <h3>
+                  Custom eCommerce Website<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <p>
+                  A fully customized eCommerce website tailored to your business
+                  needs, offering unique features and functionalities.
+                </p>
+              </div>
+              <div class="card-back">
+                <h3>
+                  Custom eCommerce Website<br /><span
+                    >Varies based on project.</span
+                  >
+                </h3>
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology Stack Section -->
+    <div class="techstack reveal" id="techstack">
+      <h2>What’s in our tech toolbox?</h2>
+      <p>
+        From frontend finesse to backend beasts — we build with the boldest tech
+        to deliver powerful digital experiences.
+      </p>
+      <div class="container">
+        <div class="wrapper">
+          <img
+            src="assets/images/html-logo.png"
+            class="tech-item tech1"
+            alt="HTML5"
+          />
+          <img
+            src="assets/images/css-logo.png"
+            class="tech-item tech2"
+            alt="CSS3"
+          />
+          <img
+            src="assets/images/js-logo.png"
+            class="tech-item tech3"
+            alt="JavaScript"
+          />
+          <img
+            src="assets/images/react-logo.png"
+            class="tech-item tech4"
+            alt="ReactJS"
+          />
+          <img
+            src="assets/images/node-logo.png"
+            class="tech-item tech5"
+            alt="Node.js"
+          />
+          <img
+            src="assets/images/mongodb-logo.png"
+            class="tech-item tech6"
+            alt="MongoDB"
+          />
+          <img
+            src="assets/images/tailwind-logo.png"
+            class="tech-item tech7"
+            alt="Tailwind CSS"
+          />
+          <img
+            src="assets/images/git-logo.png"
+            class="tech-item tech8"
+            alt="Git"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section-->
+    <div class="portfolio reveal" id="portfolio">
+      <div class="portfolio-grid">
+        <div class="card intro">
+          <p class="subtitle">PORTFOLIO</p>
+          <h2>Wanna See the Magic We’ve Built?</h2>
+          <div class="line"></div>
+          <p>Real ones. Real reviews. Real results.</p>
+        </div>
+
+        <div class="card"></div>
+
+        <div class="card"></div>
+
+        <div class="card"></div>
+
+        <div class="card"></div>
+
+        <div class="card"></div>
+      </div>
+    </div>
+
+    <!-- Testemonial Section-->
+    <div class="testimonial reveal" id="testemonial">
+      <div class="testimonial-section">
+        <div class="testimonial-header">
+          <p class="subtitle">TESTIMONIAL</p>
+          <h2>What Our Clients Say</h2>
+        </div>
+
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <div class="testimonial-img"></div>
+            <p class="quote-icon">❝</p>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <h4>Jane Roe</h4>
+            <span>Manager</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-img"></div>
+            <p class="quote-icon">❝</p>
+            <p class="testimonial-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris.
+            </p>
+            <h4>John Doe</h4>
+            <span>CEO</span>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-img"></div>
+            <p class="quote-icon">❝</p>
+            <p class="testimonial-text">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore.
+            </p>
+            <h4>Richard Roe</h4>
+            <span>Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section reveal" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h4>GET IN TOUCH</h4>
+          <h2>Seamless Communication, Global Impact.</h2>
+          <p>Wanna talk biz or just vibe? Hit us up — we're just a tap away.</p>
+
+          <div class="info-grid">
+            <div class="info-box">
+              <h5>HEAD OFFICE</h5>
+              <p>PU-iNCENT, Admin-2 Basement, Poornima University, Jaipur</p>
+            </div>
+            <div class="info-box">
+              <h5>EMAIL SUPPORT</h5>
+              <p>support@hexora.com</p>
+            </div>
+            <div class="info-box">
+              <h5>LET'S TALK</h5>
+              <p>Phone: +91 7599666728</p>
+            </div>
+            <div class="info-box">
+              <h5>WORKING HOURS</h5>
+              <p>Monday - Saturday<br />07am - 09pm</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send us a quote</h3>
+          <p>
+            Got questions, ideas, or hot takes? Slide into our inbox — we’re all
+            ears.
+          </p>
+          <form id="quote-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="company" placeholder="Company" />
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" placeholder="Phone" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer reveal">
+      <div class="footer-container">
+        <div class="footer-about">
+          <img
+            src="assets/images/Hexora Black Logo with Name.png"
+            alt="Logo"
+            class="logo"
+          />
+          <p>
+            Hexora isn’t just building websites — we’re building digital vibes.
+            From slick designs to full-stack magic and marketing that slaps,
+            we’ve got the sauce to level up your online game.
+          </p>
+          <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Discover</a></li>
+            <li><a href="#services">Explore</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#testemonial">Voices</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Graphics Designing</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Other Links</h3>
+          <ul>
+            <li><a href="">Refund policy</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms of service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p>© 2022-2025 Hexora | All Rights Reserved.</p>
+        <p>Hexora | Powered by Ashiya Group of Companies</p>
+      </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
